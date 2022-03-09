@@ -26,13 +26,54 @@
         Novas pseudo-classes
         Como aplicar um background gradiente na página
         Pseudo-elementos
+
+    4.Selecionando qualquer coisa
+        
+    Nesta aula, aprendemos:
+
+    Seletores avançados CSS
+
+        Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+
+            main > p {
+            }
+            
+
+        Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+
+            img + p {
+            }
+
+        Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+        
+            img ~ p {
+            }
+
+        Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+        
+            main p:not(#missao) {
+            }
+
+        Como fazer contas com CSS, com a propriedade calc
+
+    5. Opacidade e sombra
+    
+    Nesta aula, aprendemos:
+
+        Como manipular a opacidade dos elementos, com a propriedade CSS opacity
+        Como manipular a opacidade das cores
+        Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow
+        Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow
+            
+    6.Design responsivo
 -->
 
 <!DOCTYPE html>
 
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8" > 
+        <meta name="viewport" content="width=device-width">
         <title>Barbearia Alura</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
@@ -57,6 +98,7 @@
         <img class="banner" src="..\Materiais2\imagens\banner.jpg" alt="">
 
         <main>
+            
             <section class="principal">
                 <h2 class="title-main">Sobre a Barbearia Alura</h2>
                 <img src="..\Materiais2\imagens\utensilios.jpg" alt="ilustração" class="utensilio">
