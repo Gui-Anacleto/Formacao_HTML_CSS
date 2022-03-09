@@ -167,6 +167,7 @@ td, th{
 }
 
 
+
 .utensilio {
     width: 130px;
     float: left;
@@ -260,7 +261,18 @@ td, th{
 }
 
 @media screen and (max-width: 480px){
-    body{
-        background: red;
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo ,.video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .img-beneficios{
+        width: 100%;
     }
 }
